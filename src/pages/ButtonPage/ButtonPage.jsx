@@ -7,15 +7,17 @@ function ButtonPage() {
     <div className="App">
         <h2>Button Page</h2>
         <div className="button-container">
-          <div className="button-container-block">
-            <div className="button-container-frame">
-              <a href="" className="button-hover-1">Hover Me</a>
-            </div>
+          <div className="button-container-frame">
+            <a href="" className="button-hover-1">Hover Me</a>
           </div>
-          <div className="button-container-block">
-            <div className="button-container-frame">
-              <a href="" className="button-hover-2">Hover Me</a>
-            </div>
+          <div className="button-container-frame">
+            <a href="" className="button-hover-2">Hover Me</a>
+          </div>
+          <div className="button-container-frame">
+            <a href="" className="button-hover-3">Hover Me</a>
+          </div>
+          <div className="button-container-frame">
+            <a href="" className="button-hover-4">Hover Me</a>
           </div>
         </div>
     </div>
