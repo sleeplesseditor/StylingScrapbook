@@ -1,11 +1,27 @@
 .button-container {
-  width: 50%;
+  max-width: 2500px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 25% 100px auto;
 
   &-frame {
-    margin: 1rem 0;
+    margin: 2rem 6rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .button-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .button-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .button-container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -16,9 +32,13 @@
   font-size: 15px;
   letter-spacing: 2px;
 	border: 3px solid #262626;
-	padding: 10px 20px;
-	position: absolute;
+  height: 2.5rem;
+  width: 7.5rem;
+	position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 
   &:before {
@@ -47,11 +67,14 @@
   font-size: 15px;
   letter-spacing: 2px;
 	border: 3px solid #351435;
-	padding: 10px 20px;
-	position: absolute;
-  transition: all 1s;
-  cursor: pointer;
+  height: 2.5rem;
+  width: 7.5rem;
+	position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 
   &:hover {
     color: #ffffff;
@@ -67,7 +90,7 @@
     background-color: #351435;
     z-index: -1;
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 0.5s;
   }
 
   &:hover:before {
@@ -82,11 +105,14 @@
   font-size: 15px;
   letter-spacing: 2px;
 	border: 3px solid #262626;
-	padding: 10px 20px;
-	position: absolute;
-  transition: all 1s;
-  cursor: pointer;
+  height: 2.5rem;
+  width: 7.5rem;
+	position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 
   &:hover {
     color: #eeeeee;
@@ -140,6 +166,11 @@
   position: absolute;
   transition: all 1s;
   cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 
   &:hover {
     font-weight: 900;
@@ -156,11 +187,15 @@
   font-size: 15px;
   letter-spacing: 2px;
 	border: 3px solid #222;
-  padding: 10px 20px;
-  position: absolute;
   transition: all 1s;
-  cursor: pointer;
+  height: 2.5rem;
+  width: 7.5rem;
+	position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 
   &:before {
     content: 'CONFIRM';
@@ -190,11 +225,15 @@
   font-size: 15px;
   letter-spacing: 2px;
 	border: 3px solid #222;
-  padding: 10px 20px;
-  position: absolute;
   transition: all 0.5s;
-  cursor: pointer;
+  height: 2.5rem;
+  width: 7.5rem;
+	position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 
   &:hover {
     background-color: #F44336;
@@ -215,5 +254,103 @@
 
   &:hover:before {
     transform: translateX(100%) rotate(45deg);
+  }
+}
+
+.button-hover-7 {
+	text-decoration: none;
+  background-color: #262626;
+  color: transparent;
+	font-family: sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+	border: 3px solid #262626;
+  transition: all 0.5s;
+  height: 2.5rem;
+  width: 7.5rem;
+	position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:before {
+    content: 'Hover Me';
+    background-color: #fffa65;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+
+  &:after {
+    content: 'Hover Me';
+    background-color: #fffa65;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: translate(-100%, 100%);
+  }
+
+  &:hover:before {
+    transform: translate(100%, -100%);
+  }
+
+  &:hover:after {
+    transform: translate(0, 0);
+  }
+}
+
+.button-hover-8 {
+	text-decoration: none;
+  color: #262626;
+	font-family: sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+	border: 3px solid #262626;
+  transition: all 0.5s;
+  height: 2.5rem;
+  width: 7.5rem;
+	position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:before {
+    content: 'Hover Me';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #262626;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: scale(5);
+    opacity: 0;
+  }
+
+  &:hover:before {
+    transform: scale(1);
+    opacity: 1;
   }
 }

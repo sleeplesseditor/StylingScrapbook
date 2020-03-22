@@ -19,13 +19,17 @@ function ButtonPage() {
           <div className="button-container-frame">
             <a href="" className="button-hover-4">Hover Me</a>
           </div>
-        </div>
-        <div className="button-container">
           <div className="button-container-frame">
             <a href="" className="button-hover-5">Hover Me</a>
           </div>
           <div className="button-container-frame">
             <a href="" className="button-hover-6">Hover Me</a>
+          </div>
+          <div className="button-container-frame">
+            <a href="" className="button-hover-7">Hover Me</a>
+          </div>
+          <div className="button-container-frame">
+            <a href="" className="button-hover-8">Hover Me</a>
           </div>
         </div>
     </div>
