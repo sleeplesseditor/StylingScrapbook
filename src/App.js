@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import LazyLoader from './components/LazyLoader/LazyLoader';
 import './App.scss';
 
-const ButtonPage = React.lazy(() => import('./pages/ButtonPage'));
+const ButtonPage = React.lazy(() => import('./pages/ButtonPage/ButtonPage'));
 
 function App() {
   return (
