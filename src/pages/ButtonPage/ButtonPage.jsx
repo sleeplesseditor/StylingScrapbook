@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import CascadingNavbar from './CascadingNavbar';
 import './ButtonPage.scss';
 
 function ButtonPage() {
@@ -31,6 +32,9 @@ function ButtonPage() {
           <div className="button-container-frame">
             <a href="" className="button-hover-8">Hover Me</a>
           </div>
+        </div>
+        <div className="navbar-container">
+          <CascadingNavbar />
         </div>
     </div>
   );
