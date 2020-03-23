@@ -22,6 +22,20 @@ function ImageEffects() {
               <p>some generic content text</p>
             </div>
           </div>
+          <div className="image-container-3">
+            <img className="image-container-3-img" src={Image1} alt=""/>
+            <div className="image-container-3-caption">
+              <h1>amazing caption</h1>
+              <p>some generic content text</p>
+            </div>
+          </div>
+          <div className="image-container-4">
+            <img className="image-container-4-img" src={Image1} alt=""/>
+            <div className="image-container-4-caption">
+              <h1>amazing caption</h1>
+              <p>some generic content text</p>
+            </div>
+          </div>
         </div>
     </div>
   );
