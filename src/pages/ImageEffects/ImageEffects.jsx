@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Image1 from '../../img/image1.png';
+import Image2 from '../../img/image2.png';
 import './ImageEffects.scss';
 
 function ImageEffects() {
@@ -35,6 +36,13 @@ function ImageEffects() {
               <h1>amazing caption</h1>
               <p>some generic content text</p>
             </div>
+          </div>
+        </div>
+        <div className="image-container-5">
+          <img className="image-container-5-img" src={Image2} alt=""/>
+          <div className="image-container-5-caption">
+            <h1>amazing caption</h1>
+            <p>some generic content text</p>
           </div>
         </div>
     </div>

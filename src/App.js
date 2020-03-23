@@ -6,6 +6,7 @@ import './App.scss';
 
 const ButtonPage = React.lazy(() => import('./pages/ButtonPage/ButtonPage'));
 const ImageEffectsPage = React.lazy(() => import('./pages/ImageEffects/ImageEffects'));
+const TextEffectsPage = React.lazy(() => import('./pages/TextEffects/TextEffects'));
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={LazyLoader(ButtonPage)} />
           <Route exact path="/image-effects" component={LazyLoader(ImageEffectsPage)} />
+          <Route exact path="/text-effects" component={LazyLoader(TextEffectsPage)} />
         </Switch>
     </Router>
   );
