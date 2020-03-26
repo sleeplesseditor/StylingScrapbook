@@ -69,6 +69,13 @@ export default function Header() {
             >
                 Text Effects Page
             </Link>
+            <Link 
+                to={"/navbar-effects"}
+                style={{ textDecoration: 'none' }}
+                onClick={toggleNav}
+            >
+                Navbar Effects Page
+            </Link>
         </nav>
       </CSSTransition>
       <button onClick={toggleNav} className="header-button">

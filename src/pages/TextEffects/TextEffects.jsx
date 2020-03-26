@@ -16,7 +16,10 @@ function TextEffects() {
               <li>y</li>
             </ul>
           </div>
-        </div>
+          <div className="text-container-content-2">
+            <h1>text</h1>
+          </div>
+        </div>      
     </div>
   );
 }

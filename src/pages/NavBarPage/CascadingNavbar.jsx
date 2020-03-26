@@ -4,7 +4,7 @@ import React from 'react';
 function CascadingNavbar() {
   return (
     <div className="App">
-      <ul className="cascading-navbar">
+      <ul className="navbar-content-1-menu">
         <li><a href="#">
           home
           <span></span>
