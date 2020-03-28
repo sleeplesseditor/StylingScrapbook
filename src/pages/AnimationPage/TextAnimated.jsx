@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TextAnimated() {
+export function TextAnimated() {
   return (
     <div>
       <h1>Coming<br/>Soon!<br/></h1>
@@ -8,4 +8,19 @@ function TextAnimated() {
   );
 }
 
-export default TextAnimated;
+export function TextLighting() {
+  return (
+    <div>
+      <ul>
+        <li>L</li>
+        <li>I</li>
+        <li>G</li>
+        <li>H</li>
+        <li>T</li>
+        <li>I</li>
+        <li>N</li>
+        <li>G</li>
+      </ul>
+    </div>
+  );
+}
