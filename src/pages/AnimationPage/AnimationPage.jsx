@@ -11,6 +11,15 @@ function AnimationPage() {
           <div className="animation-content-1">
             <TextAnimated />
           </div>
+          <div className="animation-content-2">
+            <div className="loading"></div>
+          </div>
+          <div className="animation-content-3">
+            <button className="button">Hover Me</button>
+          </div>
+          <div className="animation-content-4">
+            <button className="button">Hover Me</button>
+          </div>
         </div>
     </div>
   );
