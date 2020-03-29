@@ -31,8 +31,6 @@ function ButtonPage() {
           <div className="button-container-frame">
             <button className="button-hover-8">Hover Me</button>
           </div>
-        </div>
-        <div className="button-container">
           <div className="button-container-frame">
             <button className="button-hover-9">Hover Me</button>
           </div>

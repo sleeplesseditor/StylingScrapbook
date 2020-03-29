@@ -2,6 +2,7 @@
 import React from 'react';
 import { TextAnimated, TextLighting } from './TextAnimated';
 import { BouncingLine } from './Bouncing';
+import { SocialMedia } from './SocialMedia';
 import './AnimationPage.scss';
 
 function AnimationPage() {
@@ -32,6 +33,45 @@ function AnimationPage() {
           </div>
           <div className="animation-content-8">
             <BouncingLine />
+          </div>
+          <div className="animation-content-9">
+            <div className="rain"></div>
+          </div>
+          <div className="animation-content-10">
+            <SocialMedia />
+          </div>
+          <div className="animation-content-11">
+            <div className="pulse">
+              <i className="fas fa-phone"></i>
+            </div>
+          </div>
+          <div className="animation-content-12">
+            <div className="cradle">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div className="animation-content-13">
+            <div className="loader">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div className="animation-content-14">
+            <div className="loader">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div className="animation-content-15">
+            <h1>loading...</h1>
           </div>
         </div>
     </div>
