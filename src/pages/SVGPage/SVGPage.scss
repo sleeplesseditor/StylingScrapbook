@@ -28,6 +28,10 @@
 
 .svg-content {
   &-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     .square {
       stroke-dasharray: 650;
       stroke-dashoffset: -300;
@@ -63,5 +67,85 @@
       stroke-dashoffset: -425;
       transform: rotate(360deg);
     }
+  }
+
+  &-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .twitter-outline,
+    .twitter-icon {
+      transition: 300ms all;
+      transform-origin: 23%;
+    }
+
+    .twitter-icon-group {
+      cursor: pointer;
+      &:hover {
+        .twitter-outline {
+          transform: scale(0);
+        }
+      }
+    }
+
+    .twitter-icon {
+      transform: scale(2);
+      stroke: #4099ff;
+      opacity: 0;
+    }
+
+    .youtube-icon,
+    .youtube-outline,
+    .youtube-inner-circle {
+      transition: 300ms all;
+      transform-origin: 50% 50%;
+    }
+
+    .youtube-icon-group {
+      cursor: pointer;
+      &:hover {
+        fill: #f26768;
+        .youtube-outline {
+          transform: scale(1.2);
+        }
+        .youtube-icon {
+          stroke: #fff;
+        }
+        .youtube-inner-circle {
+          fill: #f26768;
+        }
+      }
+    }
+
+    .facebook-outline,
+    .facebook-detail {
+      transition: 300ms all;
+      transform-origin: 78% 50%;
+    }
+
+    .facebook-detail {
+      opacity: 0;
+    }
+
+    .facebook-icon-group {
+      cursor: pointer;
+      &:hover {
+        .facebook-outline {
+          transform: scale(1.8);
+          opacity: 0;
+        }
+        .facebook-detail {
+          opacity: 1;
+          transform: scale(0.8) rotate(180deg);
+        }
+      }
+    }
+  }
+
+  &-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
