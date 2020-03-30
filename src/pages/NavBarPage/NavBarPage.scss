@@ -1,14 +1,11 @@
 .navbar-container {
   max-width: 2500px;
   display: grid;
+  margin: 2rem 0;
 
   &-frame {
     margin: 2rem 6rem;
   }
-}
-
-.navbar-container {
-  margin: 2rem 0;
 }
 
 @media (min-width: 600px) {

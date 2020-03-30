@@ -83,6 +83,13 @@ export default function Header() {
             >
                 Animation Page
             </Link>
+            <Link 
+                to={"/svg"}
+                style={{ textDecoration: 'none' }}
+                onClick={toggleNav}
+            >
+                SVG Page
+            </Link>
         </nav>
       </CSSTransition>
       <button onClick={toggleNav} className="header-button">

@@ -1,0 +1,67 @@
+.svg-container {
+  max-width: 2500px;
+  display: grid;
+  margin: 2rem 0;
+
+  &-frame {
+    margin: 2rem 6rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .svg-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .svg-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .svg-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.svg-content {
+  &-1{
+    .square {
+      stroke-dasharray: 650;
+      stroke-dashoffset: -300;
+      animation: draw-square 3s linear infinite;
+      transform-origin: 50% 48%;
+    }
+
+    .hexagon {
+      stroke-dasharray: 425;
+      stroke-dashoffset: -425;
+      animation: draw-hexagon 2s linear infinite;
+      transform-origin: 50% 48%;
+    }
+  }
+
+  @keyframes draw-square {
+    from { 
+      stroke-dashoffset: -650;
+      transform: rotate(0deg);
+    }
+    to { 
+      stroke-dashoffset: 650;
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes draw-hexagon {
+    from { 
+      stroke-dashoffset: 425;
+      transform: rotate(0deg);
+    }
+    to { 
+      stroke-dashoffset: -425;
+      transform: rotate(360deg);
+    }
+  }
+}
