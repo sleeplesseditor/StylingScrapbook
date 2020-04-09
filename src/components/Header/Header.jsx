@@ -90,6 +90,13 @@ export default function Header() {
             >
                 SVG Page
             </Link>
+            <Link 
+                to={"/dark-mode"}
+                style={{ textDecoration: 'none' }}
+                onClick={toggleNav}
+            >
+                Dark Mode Page
+            </Link>
         </nav>
       </CSSTransition>
       <button onClick={toggleNav} className="header-button">

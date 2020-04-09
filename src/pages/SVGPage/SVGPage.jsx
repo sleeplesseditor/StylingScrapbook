@@ -3,7 +3,6 @@ import React from 'react';
 import ShapesLogo from './ShapesLogo';
 import SocialIcons from './SocialIcons';
 import InstagramIcon from './InstagramIcon';
-import SearchLight from './SearchLight';
 import './SVGPage.scss';
 
 function SVGPage() {
@@ -19,9 +18,6 @@ function SVGPage() {
           </div>
           <div className="svg-content-3">
             <InstagramIcon />
-          </div>
-          <div className="svg-content-4">
-            <SearchLight />
           </div>
         </div>   
     </div>
