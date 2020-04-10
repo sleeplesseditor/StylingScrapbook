@@ -10,11 +10,22 @@ function DarkModePage() {
 
   const renderDarkModeArea = () => {
     return (
-      <div className="dark-mode-feature-1">
-        <button className="button">
-          Neon Button
-        </button>
-      </div>
+      <React.Fragment>
+        <div className="dark-mode-feature-1">
+          <button className="button">
+            Neon Button
+          </button>
+        </div>
+        <div className="dark-mode-feature-2">
+          <button className="button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Neon Button
+          </button>
+        </div>
+      </React.Fragment>
     )
   }
 
