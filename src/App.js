@@ -11,6 +11,7 @@ const NavbarPage = React.lazy(() => import('./pages/NavBarPage/NavBarPage'));
 const AnimationPage = React.lazy(() => import('./pages/AnimationPage/AnimationPage'));
 const SVGPage = React.lazy(() => import('./pages/SVGPage/SVGPage'));
 const DarkModePage = React.lazy(() => import('./pages/DarkModePage/DarkModePage'));
+const IsometricCardPage = React.lazy(() => import('./pages/IsometricCardPage/IsometricCardPage'));
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/animation-effects" component={LazyLoader(AnimationPage)} />
           <Route exact path="/svg" component={LazyLoader(SVGPage)} />
           <Route exact path="/dark-mode" component={LazyLoader(DarkModePage)} />
+          <Route exact path="/isometric-card" component={LazyLoader(IsometricCardPage)} />
         </Switch>
     </Router>
   );

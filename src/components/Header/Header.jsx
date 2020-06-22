@@ -97,6 +97,13 @@ export default function Header() {
             >
                 Dark Mode Page
             </Link>
+            <Link 
+                to={"/isometric-card"}
+                style={{ textDecoration: 'none' }}
+                onClick={toggleNav}
+            >
+                Isometric Card Page
+            </Link>
         </nav>
       </CSSTransition>
       <button onClick={toggleNav} className="header-button">
