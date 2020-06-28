@@ -11,19 +11,57 @@ function DarkModePage() {
   const renderDarkModeArea = () => {
     return (
       <React.Fragment>
-        <div className="dark-mode-feature-1">
-          <button className="button">
-            Neon Button
-          </button>
-        </div>
-        <div className="dark-mode-feature-2">
-          <button className="button">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Neon Button
-          </button>
+        <div className="dark-mode-container">
+          <div className="dark-mode-row">
+            <div className="dark-mode-feature-1">
+            <button className="button">
+              Neon Button
+            </button>
+            </div>
+            <div className="dark-mode-feature-2">
+              <button className="button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Neon Button
+              </button>
+            </div>
+          </div>
+          <div className="dark-mode-row">
+            <ul className="glowing-checkbox">
+              <li>
+                <label>
+                  <input type="checkbox" name="" />
+                  <div className="icon"><i className="fa fa-gift" aria-hidden='true'></i></div>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="" />
+                  <div className="icon"><i className="fa fa-beer" aria-hidden='true'></i></div>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="" />
+                  <div className="icon"><i className="fa fa-heart" aria-hidden='true'></i></div>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="" />
+                  <div className="icon"><i className="fa fa-globe" aria-hidden='true'></i></div>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="" />
+                  <div className="icon"><i className="fa fa-graduation-cap" aria-hidden='true'></i></div>
+                </label>
+              </li>
+            </ul>
+          </div>
         </div>
       </React.Fragment>
     )
