@@ -104,6 +104,13 @@ export default function Header() {
             >
                 Isometric Card Page
             </Link>
+            <Link 
+                to={"/3d-effects"}
+                style={{ textDecoration: 'none' }}
+                onClick={toggleNav}
+            >
+                3D Effects Page
+            </Link>
         </nav>
       </CSSTransition>
       <button onClick={toggleNav} className="header-button">
